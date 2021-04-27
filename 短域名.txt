@@ -1,0 +1,12 @@
+1、我们假定域名：http://localhost:8006/manage/short（真正的域名只是localhost部分），输入URL，生产8位唯一码，通过8位码跳转到实际地址
+
+2、启动程序，输入：http://localhost:8006/manage/short.html
+
+3、在“请输入域名”录入框中，输入完整URL地址,例如：https://zhangvalue.blog.csdn.net/
+4、点击“生成短域名”，然后会在“短域名测试”下生成类似地址“http://localhost/manage/short/22Ubeaaa”
+5、点击该地址会跳转到录入框中输入的页面。
+
+6、压测内存使用在（200并发、100次循环）：100M~400；假设除系统内存外还有6G内存，JVM新老内存可配置为：2.4G:0.8G:0.8G:2G
+短域名测试运行地址：http://localhost:8006/manage/short.html
+
+帮助地址：http://localhost:8006/swagger-ui.html
